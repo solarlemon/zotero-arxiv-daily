@@ -169,6 +169,7 @@ if __name__ == '__main__':
           exit(0)
     else:
         logger.info("Reranking papers...")
+        print(corpus)
         papers = rerank_paper(papers, corpus)
         if args.max_paper_num != -1:
             papers = papers[:args.max_paper_num]
